@@ -28,5 +28,4 @@ Works via Bluetooth Mesh	Yes (Hops from phone to phone)	❌ No
 1. Sideload the App: Grab the .apk file from a friend via SD card, USB, or local download.
 2. Turn on Radios: Ensure your Bluetooth and Wi-Fi are switched on.
 3. Swap IDs: Add your friends by scanning their local public ID key, and you're good to go.
-<img width="2000" height="2000" alt="Kuntz icon" src="https://github.com/user-attachments/assets/445532d7-5ab4-4172-970e-5a73996f74a0" />
 <img width="2000" height="2000" alt="Kuntz" src="https://github.com/user-attachments/assets/241a063d-8084-4007-9d62-6d7645692eb5" />
