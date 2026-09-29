@@ -1,31 +1,68 @@
-# Project-Kuntz-Messenger
-Offline Messenger For Buchrim
-Kuntz (Forked from Knit)
-Kuntz is a decentralized, serverless messaging application forked from the open-source Knit framework. It is engineered to give bochrim a smooth, direct way to stay in touch without cellular service, data plans, or phone bills.
-Because it connects device-to-device, you can text without a SIM card or cell signal. You can chat entirely off-the-grid using Bluetooth mesh, or jump on standard Wi-Fi networks when available to text over longer ranges without needing a carrier.
-🔥 Why It Is Perfect for Bochrim
-Kuntz is built for the guys who want a reliable, hassle-free way to text without dealing with phone plans, contracts, or filtered internet issues:
-• No SIM or Cell Service Needed: Run it perfectly on an old smartphone with the SIM pulled out, an iPod, or any basic Android device.
-• Dual-Mode Connectivity: Use it on the fly anywhere. It switches between Bluetooth mesh when you are out on the street and standard Wi-Fi when you are indoors.
-• Zero Internet Traps: Because it doesn't need the open web to route your texts, there are no browsers, algorithms, or feeds to worry about. It just sends your messages.
-• Completely Private: No phone numbers, emails, or central databases tracking who you talk to. You are completely off the grid.
-📡 How It Works: Texting Without Boundaries
-Traditional chat apps stop working the second you lose cell signal or leave a Wi-Fi zone. Kuntz keeps you connected by using whatever wireless radios are available on your phone right now.
-1. Bluetooth Low Energy (BLE) Mesh
-When you are entirely away from routers, Kuntz uses your phone’s Bluetooth to create a local network.
-• The "Hop" Network: If you want to text a guy who is a few blocks away, your message securely "hops" through other bochrim's phones running Kuntz until it hits his device.
-• Total Privacy: The guys acting as the middle relays will never see your texts. Everything is fully encrypted, and their phones just pass the data along in the background.
-2. Wi-Fi Local & Internet Messaging
-Unlike pure mesh apps, Kuntz fully utilizes Wi-Fi to give you maximum flexibility.
-• Local Wi-Fi Direct: If you are in the same building, your phones can link directly over Wi-Fi channels without needing an actual internet connection.
-• Standard Wi-Fi Networking: When you do connect to a standard Wi-Fi network, Kuntz uses it to easily blast your messages across longer distances across the building or campus, keeping the chat going instantly without burning a drop of cellular data.
-Feature	Kuntz	Standard Chat Apps
-Needs a SIM Card	❌ No	Yes
-Needs a Monthly Plan	❌ No	Yes
-Works on Offline Wi-Fi	Yes (Direct peer-to-peer)	❌ No
-Works via Bluetooth Mesh	Yes (Hops from phone to phone)	❌ No
-🛠️ Setup
-1. Sideload the App: Grab the .apk file from a friend via SD card, USB, or local download.
-2. Turn on Radios: Ensure your Bluetooth and Wi-Fi are switched on.
-3. Swap IDs: Add your friends by scanning their local public ID key, and you're good to go.
-<img width="2000" height="2000" alt="Kuntz" src="https://github.com/user-attachments/assets/241a063d-8084-4007-9d62-6d7645692eb5" />
+# 📡 Kuntz Messenger
+
+> **Decentralized, serverless offline messaging for Bochrim.** Forked from the open-source Knit framework.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/241a063d-8084-4007-9d62-6d7645692eb5" alt="Kuntz Messenger Logo" width="300px"/>
+</p>
+
+---
+
+### 📖 Overview
+
+**Kuntz** is a serverless, peer-to-peer messaging application engineered specifically to give bochrim a smooth, direct way to stay in touch completely off-the-grid. 
+
+Because it routes communications directly device-to-device, you can text without cellular service, active data plans, or recurring bills. Chat on the fly using local Bluetooth mesh networks or hop onto nearby Wi-Fi configurations to exchange messages across larger campus areas without needing a traditional mobile carrier.
+
+---
+
+### 🔥 Key Advantages for Bochrim
+
+Kuntz is built from the ground up for a reliable, completely independent texting experience without contract restrictions or web filters:
+
+* **No SIM or Cell Service Needed**  
+  Breathe new life into offline hardware. Kuntz runs flawlessly on old smartphones with the SIM cards pulled out, iPods, or any baseline Android device.
+* **Dual-Mode Local Connectivity**  
+  Seamlessly adapt to your environment. The app switches automatically to **Bluetooth Mesh** when you are walking down the street and hooks onto standard **Local Wi-Fi** loops indoors.
+* **Zero Internet Traps**  
+  Because text packets never touch the open web, there are no algorithmic feeds, tracking pixels, built-in browsers, or online distractions to worry about. It simply routes messages.
+* **Complete Infrastructure Privacy**  
+  No cellular phone numbers, registered emails, or centralized account databases track your connections. You remain fully off-grid.
+
+---
+
+### 📡 How It Works: Mesh Networking Explained
+
+Traditional chat clients fail the moment a cell tower drops or an internet gateway closes. Kuntz keeps conversations active by forming dynamic pathways over existing on-board device radios.
+
+#### 1. Bluetooth Low Energy (BLE) Mesh
+When completely separated from local routers or hardware infrastructure, Kuntz leverages BLE radios to construct an independent neighborhood mesh.
+* **The "Hop" Network:** If you text a friend blocks away, your encrypted message securely bounces through the devices of other close-range Kuntz users until it lands safely on his screen.
+* **Total Intermediary Privacy:** Middle-relay users never have access to your data. Content payloads are entirely end-to-end encrypted, passing transparently through background system processes.
+
+#### 2. Wi-Fi Local & Multi-Hop Channels
+The framework expands past pure Bluetooth limits by utilizing local Wi-Fi frequencies for extended reach.
+* **Local Wi-Fi Direct:** Connect directly peer-to-peer inside the same building without configuring or authenticating through an external internet router.
+* **Standard Campus Wi-Fi:** When an active Wi-Fi access point is present, Kuntz utilizes it as an expansive transmission bridge to blast your messages across massive structural distances or entire campus complexes instantly.
+
+---
+
+### 📊 Client Feature Comparison
+
+| Capabilities & Requirements | 📡 Kuntz Messenger | 💬 Standard Chat Applications |
+| :--- | :---: | :---: |
+| **Requires Active SIM Card** | ❌ No |  Yes |
+| **Requires Monthly Service Plan** | ❌ No |  Yes |
+| **Operates over Offline Wi-Fi Direct** |  Yes | ❌ No |
+| **Routes via Multi-Device Bluetooth Mesh** |  Yes | ❌ No |
+
+---
+
+### 🛠️ Quick Setup Guide
+
+1. **Sideload the Application**  
+   Grab the latest `.apk` package file directly from a friend via SD Card, local USB storage, or peer-to-peer sharing.
+2. **Activate Hardware Radios**  
+   Ensure both your system **Bluetooth** and **Wi-Fi** settings are toggled on.
+3. **Exchange Identity Keys**  
+   Pair securely with your friends by scanning their local public ID key directly on-screen, and you are ready to message.
