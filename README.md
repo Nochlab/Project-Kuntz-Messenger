@@ -2,9 +2,7 @@
 
 > **Decentralized, serverless offline messaging for Bochrim.** Forked from the open-source Knit framework.
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/241a063d-8084-4007-9d62-6d7645692eb5" alt="Kuntz Messenger Logo" width="300px"/>
-</p>
+<img width="2000" height="2000" alt="Kuntz icon NEW" src="https://github.com/user-attachments/assets/d929e632-d27a-4011-afd0-9a68ea451c4e" />
 
 ---
 
@@ -37,13 +35,23 @@ Traditional chat clients fail the moment a cell tower drops or an internet gatew
 
 #### 1. Bluetooth Low Energy (BLE) Mesh
 When completely separated from local routers or hardware infrastructure, Kuntz leverages BLE radios to construct an independent neighborhood mesh.
-* **The "Hop" Network:** If you text a friend blocks away, your encrypted message securely bounces through the devices of other close-range Kuntz users until it lands safely on his screen.
-* **Total Intermediary Privacy:** Middle-relay users never have access to your data. Content payloads are entirely end-to-end encrypted, passing transparently through background system processes.
+* **The "Hop" Network:** If you text a friend blocks away, your message securely bounces through the devices of other close-range Kuntz users until it lands safely on his screen.
+* **Total Intermediary Privacy:** Middle-relay users never have access to your data. Private DMs and group chats are entirely end-to-end encrypted, passing transparently through background system processes.
 
 #### 2. Wi-Fi Local & Multi-Hop Channels
 The framework expands past pure Bluetooth limits by utilizing local Wi-Fi frequencies for extended reach.
 * **Local Wi-Fi Direct:** Connect directly peer-to-peer inside the same building without configuring or authenticating through an external internet router.
 * **Standard Campus Wi-Fi:** When an active Wi-Fi access point is present, Kuntz utilizes it as an expansive transmission bridge to blast your messages across massive structural distances or entire campus complexes instantly.
+
+---
+
+### 🔒 Security & Interception Realities
+
+Because Kuntz transmits data over a public broadcasting medium (radio waves), it is physically possible for anyone with a standard packet sniffer within range to capture your traffic. However, the protocol architecture protects your content based on the chat type:
+
+* **Private Rooms & DMs (End-to-End Encrypted):** Uses Google Tink HPKE (wrapped in X25519) and AES-256-GCM. An outside interceptor or background relay node will only see encrypted gibberish. The text, images, and delivery receipts are protected.
+* **Public "Nearby" Room (Plaintext):** Designed as an open digital megaphone. Messages sent in this room are **unencrypted** so any device can join the conversation. **Do not share sensitive information in the Nearby room, as anyone sniffing the network can read it.**
+* **Metadata & Identity Protection:** While text payloads remain locked in private chats, a sophisticated interceptor can track *when* messages are sent and *how large* they are. Always scan your friends' physical QR codes to complete key verification and block Man-in-the-Middle tracking.
 
 ---
 
